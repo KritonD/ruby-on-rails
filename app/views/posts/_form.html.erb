@@ -11,15 +11,26 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
+<div class="form-group">
+    <label class="col-form-label">
+    <%= f.label :title %>
+    </label> 
+    <br>
+    <div class="field form-group row">
     <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :body %><br>
+    </div>
+</div>
+  
+  <div class="form-group">
+
+<label class="col-form-label"> <%= f.label :body %></label><br>
+    <div class="field form-group">
     <%= f.text_area :body %>
+    </div>
   </div>
-  <div class="actions">
+
+  <div class="btn actions">
     <%= f.submit %>
-  </div>
+</div>
+  
 <% end %>

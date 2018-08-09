@@ -13,8 +13,8 @@
  *= require_tree .
  *= require_self
  */
- 
- .alert {
-  color: red;
-  font-style: italic;
-}
+
+@import "bootstrap-sprockets";
+@import "bootswatch/cerulean/variables";
+@import "bootstrap";
+@import "bootswatch/cerulean/bootswatch";
